@@ -31,7 +31,7 @@ body {
     position: relative;
 }
 
-img{
+.foto-eliska {
     width: 150px;
     border-radius: 50%;
     border: 3px solid white;
@@ -40,51 +40,63 @@ img{
     right: -75px;
     box-shadow: 3px 3px 14px rgba(0, 0, 0, 0.25);
 }
- h1 {
-     margin: 0;
-     font-size: 36px;
-     font-weight: 700;
-     color: #d63031;
- }
 
- p{
-     font-size: 18px;
-     font-weight: 400;
- }
+h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    color: #d63031;
+}
 
- .p-one {
-     margin-top: 30px;
- }
+p{
+    font-size: 18px;
+    font-weight: 400;
+}
 
- .p-two {
-     margin-bottom: 30px;
- }
+.p-one {
+    margin-top: 30px;
+}
 
- a {
-     display: inline-block;
-     width: 100%;
-     text-align: center;
-     font-size: 18px;
-     font-weight: 700;
-     text-decoration: none;
-     text-transform: uppercase;
-     padding: 10px;
-     border-radius: 5px;
-     color: white;
+.p-two {
+    margin-bottom: 30px;
+}
 
- }
+.button {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
 
- .twitter {
-     background-color: #1da1f2;
-     margin-bottom: 5px;
- }
+.twitter {
+    background-color: #1da1f2;
+    margin-bottom: 5px;
+}
     .twitter:hover {
         background-color: #0b7bc1;
     }
 
- .facebook {
-     background-color: #3b5998;
- }
- .facebook:hover {
-    background-color: #2b406e;
- }
+.facebook {
+    background-color: #3b5998;
+}
+    .facebook:hover {
+        background-color: #2b406e;
+    }
+
+/* 
+Hodnocení (Luděk Roleček)
+Oprava proběhla
+
+Stylování img
+Obrázek Elišky styluješ přímo přes selektor značky <img> - v rámci tohoto úkolu je to naprosto v pohodě, protože na stránce žádný jiný obrázek není, ale přesto bych doporučoval zvyknout si na to, přidávat na obrázky třídy a pak stylovat tyto třídy. Nikdy nevíš, za někdy později nepřibyde na stránce další obrázek, který pravděpodobně už nebudeš chtít mít nastylovaný jako kolečko v rohu vizitky. Viz Jirkova přednáška na konzultaci minulou středu 10.3.
+
+Odkazy / tlačítka
+To stejné platí pro odkazy, ze kterých děláš tlačítka. Styluješ přímo značku <a> - v rámci tohoto úkolu si to můžeš dovolit, ale není dobré si na to zvykat. Na jiných stránkách můžeš mít i další odkazy, které nebudeš chtít stylovat jako tlačítka. Lepší je přidat na oba odkazy třeba třídu .button a tu pak stylovat.
+
+Tlačítkům nastavuješ display: inline-block; a zároveň width: 100%. V tomto případě, protože jsou tlačítka pod sebou, můžeš jim nastavit rovnou jenom display: block; - blokové prvky jsou automaticky pod sebou a zabírají celou šířku, kterou mají k dispozici.
+*/
